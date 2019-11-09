@@ -11,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"/>
+        <activity
+            android:name=".ui.tabs.MyTabbed"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -23,18 +29,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CardActivity"
-            android:label="@string/title_activity_card"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name="com.jamesapprockfield.ui.login.LoginActivity"
+            android:name="com.jamesapprockfield.ui.login.LoginActivity"
             android:label="@string/action_sign_in"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

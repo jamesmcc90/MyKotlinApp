@@ -11,9 +11,9 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_gallery"
-        android:name="com.jamesapprockfield.myapp.ui.tabs.TabsFragment"
+        android:name="com.jamesapprockfield.myapp.ui.tabs.MyTabbed"
         android:label="@string/menu_gallery"
         tools:layout="@layout/tabs" />
 
